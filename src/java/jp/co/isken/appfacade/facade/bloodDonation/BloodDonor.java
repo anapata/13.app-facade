@@ -11,6 +11,8 @@ import jp.co.isken.appfacade.domain.protocol.Protocol;
 
 public class BloodDonor {
 
+        // 対象 = 患者 = Partyという解釈でよいか。
+        // → 医者・組織とかが出てきた場合も、このままでいくか？
 	private Party target;
 
 	public BloodDonor(Party target) {
