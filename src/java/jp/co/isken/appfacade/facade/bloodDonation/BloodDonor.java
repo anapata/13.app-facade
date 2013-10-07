@@ -30,7 +30,9 @@ public class BloodDonor {
 		Observation oldObs = target.getObservation(BiologicalPhenomenonType.血液型);
 		// 新しい観測を生成
 		Observation newObs = new Observation(target, BiologicalPhenomenonType.血液型, bloodType);
-		// 過去の観測を否認する
+
+                // oldObsがnewObsを否定しているような感じがする
+                // oldObs.rejectedBy(newObs); の方がわかりやすい感じ
 		oldObs.reject(newObs);
 	}
 
