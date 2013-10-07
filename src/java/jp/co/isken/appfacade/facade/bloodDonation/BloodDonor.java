@@ -59,6 +59,8 @@ public class BloodDonor {
 		if (!isValidSupplyDate(getLastBloodSupplyDate(), date)) {
 			throw new IllegalArgumentException("エラー");
 		}
+		// 一見、 new して何もしていないように見えて、旧人類は不安を感じてしまう。
+		// DBがあったら、違う書き方になりますか？
 		new Observation(target, Protocol.輸血, date);
 	}
 	
